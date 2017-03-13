@@ -232,7 +232,7 @@ if ((typeof module) == 'object' && module.exports) {
     nodecrypto = require('crypto');
   } catch (ex) {}
 } else if ((typeof define) == 'function' && define.amd) {
-  define(function() { return seedrandom; });
+  define('seekrandom', function() { return seedrandom; });
 }
 
 // End anonymous scope, and pass initial values.
